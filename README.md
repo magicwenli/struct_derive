@@ -1,4 +1,4 @@
-# StructUpdate Derive Macro
+# struct_update
 
 `StructUpdate` is a derive macro in Rust that automatically generates an `update_struct` method for your struct. This method transforms all fields of type `String` in your struct to SCREAMING_SNAKE_CASE (all uppercase with underscores between words).
 

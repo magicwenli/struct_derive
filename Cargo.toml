@@ -1,5 +1,6 @@
 [package]
 name = "struct-update"
+description = "automatically apply function on certain type of struct"
 version = "0.2.0"
 edition = "2021"
 authors = ["MagicWenli <yxnian@outlook.com>"]
