@@ -1,20 +1,20 @@
-# struct_update
+# struct_derive
 
 `StructUpdate` is a derive macro in Rust that automatically generates an `update_struct` method for your struct. This method transforms all fields of type `String` in your struct to SCREAMING_SNAKE_CASE (all uppercase with underscores between words).
 
 ## Usage
 
-1. First, you need to add the `struct_update` dependency in your `Cargo.toml` file.
+1. First, you need to add the `struct_derive` dependency in your `Cargo.toml` file.
 
 ```toml
 [dependencies]
-struct_update = "0.1.0"
+struct_derive = "0.2.0"
 ```
 
 2. Then, you can use the `#[derive(StructUpdate)]` annotation on your struct. Also, you need to use the `#[update_struct(with(ty = String, func = "to_screaming_snake_case"))]` annotation to specify which type of fields need to be updated and what function to use to update these fields.
 
 ```rust
-use struct_update::StructUpdate;
+use struct_derive::StructUpdate;
 
 fn to_screaming_snake_case(input: String) -> String {
     input.to_uppercase().replace(" ", "_")
