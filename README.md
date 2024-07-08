@@ -8,7 +8,7 @@
 
 ```toml
 [dependencies]
-struct_derive = "0.2.0"
+struct_derive = "0.2.1"
 ```
 
 2. Then, you can use the `#[derive(StructUpdate)]` annotation on your struct. Also, you need to use the `#[update_struct(with(ty = String, func = "to_screaming_snake_case"))]` annotation to specify which type of fields need to be updated and what function to use to update these fields.
